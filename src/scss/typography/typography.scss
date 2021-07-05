@@ -1,0 +1,13 @@
+.t-header {
+  font-size: 40px;
+  @include media-breakpoint-down("sm") {
+    font-size: 30px;
+  }
+}
+.t-body {
+  font-size: 18px;
+  line-height: 1.8;
+  @include media-breakpoint-down("sm") {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,11 @@
+.c-header {
+  // background-color: green;
+  height: 137px;
+  @include media-breakpoint-down("sm") {
+    height: 112px;
+  }
+  &-title {
+    font-size: 33px;
+    color: $color-secondary;
+  }
+}

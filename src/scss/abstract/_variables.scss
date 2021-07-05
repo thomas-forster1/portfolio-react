@@ -1,0 +1,68 @@
+$spacing-base: 5px;
+
+// Typography
+//========
+// $line-height-base: 1.5;
+$font-main: "Poppins", sans-serif;
+$font-size: 18px;
+$font-size-mobile: 16px;
+
+// Font weights
+//========
+// $fw-thin: 100;
+// $fw-extra-light: 200;
+// $fw-light: 300;
+// $fw-regular: 400;
+$fw-medium: 500;
+// $fw-semi-bold: 600;
+$fw-bold: 700;
+// $fw-extra-bold: 800;
+// $fw-black: 900;
+
+//Colors
+//========
+$color-bg: #fff;
+$color-text: #1d1d1b;
+$color-link: green;
+
+//Brand
+// $color-primary: hsl(180, 66%, 49%);
+$color-primary: #2bd1d1;
+$color-primary-hover: #9be3e2;
+$color-secondary: hsl(257, 27%, 26%);
+
+// Neutral
+$color-shade-1: hsl(0, 0%, 75%);
+$color-shade-2: hsl(257, 7%, 63%);
+$color-shade-3: hsl(255, 11%, 22%);
+$color-shade-4: hsl(260, 8%, 14%);
+
+//Background
+$color-bg-primary: #ffffff;
+$color-bg-light: #f0f1f6;
+
+//State colors
+$color-error: hsl(0, 87%, 67%);
+$color-success: #6ae070;
+
+$border-radius: 10px;
+$box-shadow: 0 0 49px 0 rgba(0, 0, 0, 0.13);
+
+$global-transition: all 0.3s ease-in-out;
+
+// Bootstrap grid - overwrites
+$grid-breakpoints: (
+  xs: 0,
+  sm: 441px,
+  md: 768px,
+  lg: 1164px,
+  xl: 1165px,
+) !default;
+
+$container-max-widths: (
+  sm: 375px,
+  md: 720px,
+  lg: 1138px,
+  // xl: 1440px,
+  xl: 1139px,
+) !default;

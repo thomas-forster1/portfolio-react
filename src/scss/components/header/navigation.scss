@@ -1,0 +1,10 @@
+.c-navigation {
+  &-link {
+    font-size: 15px;
+    transition: $global-transition;
+    color: $color-shade-2;
+    &:hover {
+      color: $color-shade-3;
+    }
+  }
+}

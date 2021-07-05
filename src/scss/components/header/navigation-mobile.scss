@@ -1,0 +1,66 @@
+.c-navigation-mobile {
+  &-link {
+    font-size: 16px;
+  }
+
+  &-button {
+    $b-w: 24px;
+    $b-h: 22px;
+    $b-l-h: 3px;
+
+    width: $b-w;
+    height: $b-h;
+    position: relative;
+
+    //line
+    div {
+      width: 100%;
+      height: $b-l-h;
+      background-color: $color-shade-2;
+      transition: all 0.3s ease-in-out;
+
+      &:nth-child(1) {
+        .c-navigation-mobile.-active & {
+          opacity: 0;
+        }
+      }
+
+      &:nth-child(2) {
+        position: absolute;
+        top: calc(50% - (#{$b-l-h}/ 2));
+        .c-navigation-mobile.-active & {
+          transform: rotate(45deg);
+        }
+      }
+
+      &:nth-child(3) {
+        position: absolute;
+        top: calc(100% - #{$b-l-h});
+        .c-navigation-mobile.-active & {
+          top: calc(50% - (#{$b-l-h}/ 2));
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border-radius: 10px;
+    height: 0px;
+
+    overflow: hidden;
+    transition: $global-transition;
+    .c-navigation-mobile.-active & {
+      height: 342px;
+    }
+  }
+  &-br {
+    height: 1px;
+  }
+}
+//

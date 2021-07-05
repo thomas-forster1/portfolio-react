@@ -1,0 +1,31 @@
+//These breakpoints are based on the Bootstrap grid breakpoints
+$gn-breakpoints: (
+  "xxl": index($grid-breakpoints, "xxl"),
+  "xl": index($grid-breakpoints, "xl"),
+  "lg": index($grid-breakpoints, "lg"),
+  "md": index($grid-breakpoints, "md"),
+  "sm": index($grid-breakpoints, "sm"),
+  "xs": index($grid-breakpoints, "xs"),
+  "xxs": index($grid-breakpoints, "xxs"),
+);
+
+body.local {
+  &::after {
+    position: fixed;
+    right: 0;
+    bottom: 50%;
+    z-index: 9;
+    padding: 0.5em;
+    font-size: 10px;
+    color: #000;
+    content: "default";
+    background-color: #fff;
+    border: 1px solid #000;
+
+    @each $key, $value in $gn-breakpoints {
+      @include media-breakpoint-down($key) {
+        content: $key;
+      }
+    }
+  }
+}

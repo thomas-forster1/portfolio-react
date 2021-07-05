@@ -1,0 +1,48 @@
+.c-hero {
+  overflow: hidden;
+  // background-color: green;
+  padding: 0 0 220px 0;
+  @include media-breakpoint-down("sm") {
+    overflow: initial;
+    padding: 0 0 160px 0;
+  }
+  &-title {
+    font-size: 76px;
+    margin-top: 99px;
+    line-height: 1.2;
+    @include media-breakpoint-down("sm") {
+      font-size: 40px;
+      margin-top: 23px;
+    }
+  }
+  &-body {
+    font-size: 22px;
+    line-height: 1.6;
+    @include media-breakpoint-down("sm") {
+      font-size: 18px;
+    }
+  }
+
+  &-image {
+    background-image: url("./../../../assets/images/svg/illustration-working.svg");
+    // background-color: green;
+    width: 734px;
+    height: 483px;
+    background-repeat: no-repeat;
+    right: -275px;
+    top: 29px;
+    position: absolute;
+    @include media-breakpoint-down("md") {
+      right: -425px;
+      top: 129px;
+    }
+    @include media-breakpoint-down("sm") {
+      position: relative;
+      width: 517px;
+      height: 340px;
+      background-size: contain;
+      top: -15px;
+      right: initial;
+    }
+  }
+}

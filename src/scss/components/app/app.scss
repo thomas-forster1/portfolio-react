@@ -1,0 +1,8 @@
+.c-app {
+  overflow: hidden;
+  opacity: 0;
+  transition: $global-transition;
+  &.-show {
+    opacity: 1;
+  }
+}

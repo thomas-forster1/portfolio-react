@@ -1,0 +1,50 @@
+.c-footer {
+  background-color: $color-shade-4;
+
+  &-logo {
+    width: 131px;
+    height: 33px;
+  }
+
+  &-col {
+    min-width: 135px;
+    &-title {
+      color: white;
+      font-size: 16px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        a {
+          font-size: 16px;
+          color: $color-shade-1;
+          transition: $global-transition;
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &-social {
+    a {
+      position: relative;
+      img:nth-child(1) {
+        position: absolute;
+        top: 2px;
+        opacity: 0;
+        transition: $global-transition;
+        &:hover {
+          opacity: 1;
+        }
+        &.-twitter {
+          top: 4px;
+        }
+      }
+    }
+  }
+}

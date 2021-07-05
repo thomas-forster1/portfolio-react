@@ -1,0 +1,25 @@
+.c-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: $box-shadow;
+  padding: 74px 33px 43px 30px;
+  width: 100%;
+  &-badge {
+    position: absolute;
+    top: -46px;
+    background-color: $color-secondary;
+    width: 88px;
+    height: 88px;
+    border-radius: 100px;
+    @include media-breakpoint-down("sm") {
+      left: calc(50% - 45px);
+    }
+  }
+  &-title {
+    font-size: 22px;
+  }
+  &-body {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}

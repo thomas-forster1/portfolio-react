@@ -1,0 +1,70 @@
+.c-button {
+  border: none;
+  border-radius: 100px;
+  background-color: $color-primary;
+  min-height: 56px;
+  min-width: 196px;
+  // background-color: black;
+  color: white;
+  font-size: 20px;
+  transition: $global-transition;
+
+  &:hover:not([disabled]) {
+    background-color: $color-primary-hover;
+  }
+
+  &.-sm {
+    min-height: 40px;
+    min-width: 105px;
+    font-size: 15px;
+    @include media-breakpoint-down("sm") {
+      min-width: 100%;
+    }
+  }
+
+  &.-sq {
+    min-height: 60px;
+    min-width: 188px;
+    font-size: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    @include media-breakpoint-down("sm") {
+      min-height: 50px;
+      min-width: 100%;
+    }
+  }
+  &.-sq-sm {
+    min-height: 50px;
+    min-width: 103px;
+    font-size: 15px;
+    border-radius: 7px;
+    @include media-breakpoint-down("sm") {
+      min-height: 40px;
+      min-width: 80px;
+    }
+  }
+
+  strong {
+    opacity: 1;
+    transition: $global-transition;
+  }
+
+  .c-loading {
+    position: absolute;
+    opacity: 0;
+    transition: $global-transition;
+  }
+
+  &.-loading {
+    .c-loading {
+      opacity: 1;
+    }
+    strong {
+      opacity: 0;
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
